@@ -1,0 +1,78 @@
+//download-form - desktop.scss
+
+form.marketo-form{
+    width: auto !important;
+    font-size: inherit !important;
+    
+    .mktoFieldWrap {
+        display: flex;
+        
+        label {
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        .mktoError {
+            color: red;
+            padding-left: 10px;
+        }
+    }
+    
+    .mktoFieldWrap.mktoRequiredField {
+        .mktoAsterix {
+            font-weight: bold;
+            font-size: 1.6em;
+            float: right;
+            color: #cb0000;
+            display: block;
+        }    
+    }
+    
+    .mktoAsterix {
+        display: none;
+    }
+    
+    strong {
+        font-weight: bold;
+    }
+    
+    .mktoButtonWrap {
+        margin-left: 290px !important;
+    }
+    .mktoButtonWrap button {
+        box-sizing: border-box !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0.53em 0.8em !important;
+        border: none !important;
+        font-weight: normal !important;
+        font-size: 1em !important;
+        line-height: normal !important;
+        color: var(--primary) !important;
+        background: var(--primary-low) !important;
+        cursor: pointer !important;
+        transition: all 0.25s !important;
+        box-shadow: none !important;
+    }
+    
+    .mktoButtonWrap button:hover {
+        background: var(--primary-medium) !important;
+        color: var(--secondary) !important;
+    }
+    .mktoButtonWrap button:focus {
+        outline: none !important;
+    }
+    
+    select{
+        border: 1px solid var(--primary-medium);
+        background-color: var(--secondary);
+        height: 34px;
+        padding: .5em .65em;
+    }
+    
+    textarea{
+        float: left;
+    }
+}

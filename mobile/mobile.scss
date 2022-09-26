@@ -1,0 +1,72 @@
+//download-form - mobile.scss
+
+form.marketo-form{
+    input[type="text"],input[type="email"],input[type="tel"],textarea,select {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 5px;
+        background-color: var(--secondary);
+        border: 1px solid var(--primary-medium);
+        min-height: 30px;
+        font-size: 1.2em;
+    }
+    
+    .mktoFieldWrap {
+        
+        label {
+            font-weight: bold;
+            display: inline-block;
+            font-size: 1.2em;
+        }
+        
+        .mktoError {
+            color: red;
+            font-size: 1.2em;
+        }
+    }
+    
+    .mktoFieldWrap.mktoRequiredField {
+        .mktoAsterix {
+            font-weight: bold;
+            font-size: 1.2em;
+            float: right;
+            color: #cb0000;
+            display: block;
+        }    
+    }
+    
+    .mktoAsterix {
+        display: none;
+    }
+    
+    .mktoButtonRow{
+        margin-bottom: 15px !important;
+    }
+    .mktoButtonWrap {
+        margin-left: 0px !important;
+    }
+    .mktoButtonWrap button {
+        box-sizing: border-box !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0.53em 0.8em !important;
+        border: none !important;
+        font-weight: normal !important;
+        font-size: 1.3em !important;
+        line-height: normal !important;
+        color: var(--primary) !important;
+        background: var(--primary-low) !important;
+        cursor: pointer !important;
+        transition: all 0.25s !important;
+        box-shadow: none !important;
+    }
+    .mktoButtonWrap button:hover {
+        background: var(--primary-medium) !important;
+        color: var(--secondary) !important;
+    }
+    .mktoButtonWrap button:focus {
+        outline: none !important;
+    }
+}
